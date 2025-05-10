@@ -2,17 +2,21 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Consejo del Día</title>
+    <title>Consulta tu horóscopo diario</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- AREA DE SOLO LECTURA -->
+    <h1>Consulta tu horóscopo diario</h1>
+    <input
+      type="text"
+      id="birthdate"
+      placeholder="DD-MM-AAAA"
+      maxlength="10"
+    />
+    <button id="get-quote" disabled>Consultar</button>
+
     <div id="quote-container"></div>
 
-    <!-- BOTÓN PARA OBTENER CONSEJO -->
-    <button id="get-quote">Consejo del día</button>
-
-    <!-- CONTROLADOR PRINCIPAL (ES6 MODULE) -->
     <script type="module" src="controller.js" defer></script>
   </body>
 </html>
