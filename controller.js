@@ -104,6 +104,7 @@ async function onConsultarClick() {
   timeoutId = setTimeout(() => {
     fadeOut();
     setTimeout(() => {
+      input.value = "";
       clearView();
       enableButton();
     }, 1000);
